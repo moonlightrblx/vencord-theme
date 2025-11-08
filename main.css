@@ -1,41 +1,13 @@
+/*
+ * @name Drexxy's theme
+ * @description idfk bro
+ * @author Drexxy
+ * @version 1.3.0
+ */
 
-/* Blue Discord Theme */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap');
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css');
 
-:root {
-  --background-primary: #1a1a2e;
-  --background-secondary: #16213e;
-  --background-secondary-alt: #0f3460;
-  --background-tertiary: #1b1b2f;
-  --brand-experiment: #0a81ab;
-  --brand-color: #0a81ab;
-  --interactive-normal: #0a81ab;
-  --interactive-hover: #0e9ddc;
-  --interactive-active: #086788;
-  --text-normal: #d4e1f5;
-  --text-muted: #9aa5c3;
-  --text-link: #0e9ddc;
-  --header-primary: #ffffff;
-  --header-secondary: #c4d7f2;
-  --background-accent: #0a81ab;
-}
-
-body {
-  background-color: var(--background-primary);
-  color: var(--text-normal);
-}
-
-.chat-3bRxxu {
-  background-color: var(--background-secondary) !important;
-}
-
-.messagesWrapper-3lZDfY {
-  background-color: var(--background-secondary-alt) !important;
-}
-
-.title-29uC1r, .subtitle-1KtqK2 {
-  color: var(--text-normal) !important;
-}
-
-.title-3sZWYQ {
-  color: var(--brand-color) !important;
+* {
+  font-family: 'Figtree', sans-serif !important;
 }
