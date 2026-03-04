@@ -1,12 +1,15 @@
 /**
  * @name drexxy's fud theme
- * @description a tui-style discord theme.
+ * @description skibidi cat theme
  * @author drexxy / ellii
  * @version 2.0.0
  */
 
 @import url('https://refact0r.github.io/system24/build/system24.css');
-
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css');
+/*
+you do not understand how much i locked in for this ;-;
+*/
 body {
     --font: 'DM Mono', 'JetBrains Mono', 'Fira Code', monospace;
     --code-font: 'DM Mono', 'JetBrains Mono', monospace;
