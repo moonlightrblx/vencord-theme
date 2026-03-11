@@ -1,5 +1,5 @@
 /**
- * @name drexxy's fud theme
+ * @name drexxy's fud theme (black + blue)
  * @description skibidi cat theme
  * @author drexxy / ellii
  * @version 2.0.0
@@ -7,85 +7,128 @@
 
 @import url('https://refact0r.github.io/system24/build/system24.css');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css');
-/*
-you do not understand how much i locked in for this ;-;
-*/
+
 body {
     --font: 'DM Mono', 'JetBrains Mono', 'Fira Code', monospace;
     --code-font: 'DM Mono', 'JetBrains Mono', monospace;
     font-weight: 350;
     letter-spacing: -0.025ch;
+
     --gap: 14px;
     --divider-thickness: 3px;
     --border-thickness: 1.5px;
     --border-hover-transition: 0.25s ease-out;
+
     --animations: on;
     --list-item-transition: 0.25s ease;
     --dms-icon-svg-transition: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+
     --top-bar-height: 32px;
     --top-bar-button-position: titlebar;
     --top-bar-title-position: left;
     --subtle-top-bar-title: on;
+
     --custom-window-controls: off;
     --custom-dms-icon: off;
     --custom-dms-background: off;
+
     --background-image: off;
+
     --transparency-tweaks: on;
     --remove-bg-layer: off;
+
     --panel-blur: on;
     --blur-amount: 14px;
-    --bg-floating: hsla(220, 18%, 12%, 0.88);
+
+    --bg-floating: hsla(220, 20%, 6%, 0.92);
+
     --small-user-panel: on;
     --unrounding: on;
     --custom-spotify-bar: on;
+
     --ascii-titles: on;
     --ascii-loader: system24;
+
     --panel-labels: on;
     --label-color: oklch(70% 0.02 240);
     --label-font-weight: 500;
 }
 
 :root {
+
     --colors: on;
+
+    /* text */
     --text-0: oklch(98% 0.01 0);
-    --text-1: oklch(92% 0.02 260);
-    --text-2: oklch(84% 0.03 260);
-    --text-3: oklch(76% 0.025 260);
-    --text-4: oklch(64% 0.02 260);
-    --text-5: oklch(52% 0.015 260);
-    --bg-1: oklch(28% 0.015 260);
-    --bg-2: oklch(24% 0.012 260);
-    --bg-3: oklch(20% 0.01 260);
-    --bg-4: oklch(15.5% 0.008 260);
-    --hover: oklch(60% 0.04 260 / 0.12);
-    --active: oklch(60% 0.05 260 / 0.20);
-    --active-2: oklch(60% 0.06 260 / 0.28);
+    --text-1: oklch(92% 0.015 240);
+    --text-2: oklch(84% 0.02 240);
+    --text-3: oklch(76% 0.02 240);
+    --text-4: oklch(64% 0.015 240);
+    --text-5: oklch(52% 0.01 240);
+
+    /* black background */
+    --bg-1: oklch(16% 0.005 240);
+    --bg-2: oklch(12% 0.004 240);
+    --bg-3: oklch(9% 0.003 240);
+    --bg-4: oklch(6% 0.002 240);
+
+    --hover: oklch(70% 0.08 250 / 0.12);
+    --active: oklch(70% 0.09 250 / 0.20);
+    --active-2: oklch(70% 0.10 250 / 0.28);
+
     --message-hover: var(--hover);
-    --purple-1: oklch(78% 0.14 285);
-    --purple-2: oklch(72% 0.145 285);
-    --purple-3: oklch(66% 0.14 285);
-    --purple-4: oklch(60% 0.135 285);
-    --purple-5: oklch(54% 0.13 285);
-    --teal-1: oklch(78% 0.13 200);
-    --teal-2: oklch(72% 0.135 200);
-    --teal-3: oklch(66% 0.13 200);
-    --accent-1: var(--purple-1);
-    --accent-2: var(--purple-2);
-    --accent-3: var(--purple-3);
-    --accent-4: var(--purple-4);
-    --accent-5: var(--purple-5);
-    --accent-new: oklch(70% 0.14 20);
-    --mention: linear-gradient(to right, color-mix(in oklch, var(--accent-2), transparent 88%) 35%, transparent);
-    --mention-hover: linear-gradient(to right, color-mix(in oklch, var(--accent-2), transparent 92%) 35%, transparent);
-    --reply: linear-gradient(to right, color-mix(in oklch, var(--text-3), transparent 88%) 35%, transparent);
-    --reply-hover: linear-gradient(to right, color-mix(in oklch, var(--text-3), transparent 92%) 35%, transparent);
+
+    /* blue palette */
+    --blue-1: oklch(78% 0.14 250);
+    --blue-2: oklch(72% 0.15 250);
+    --blue-3: oklch(66% 0.14 250);
+    --blue-4: oklch(60% 0.13 250);
+    --blue-5: oklch(54% 0.12 250);
+
+    /* accents */
+    --accent-1: var(--blue-1);
+    --accent-2: var(--blue-2);
+    --accent-3: var(--blue-3);
+    --accent-4: var(--blue-4);
+    --accent-5: var(--blue-5);
+
+    --accent-new: oklch(70% 0.16 250);
+
+    --mention: linear-gradient(
+        to right,
+        color-mix(in oklch, var(--accent-2), transparent 88%) 35%,
+        transparent
+    );
+
+    --mention-hover: linear-gradient(
+        to right,
+        color-mix(in oklch, var(--accent-2), transparent 92%) 35%,
+        transparent
+    );
+
+    --reply: linear-gradient(
+        to right,
+        color-mix(in oklch, var(--text-3), transparent 88%) 35%,
+        transparent
+    );
+
+    --reply-hover: linear-gradient(
+        to right,
+        color-mix(in oklch, var(--text-3), transparent 92%) 35%,
+        transparent
+    );
+
+    /* status */
     --online: oklch(68% 0.13 145);
     --dnd: oklch(68% 0.14 25);
     --idle: oklch(72% 0.13 80);
-    --streaming: var(--purple-2);
+    --streaming: var(--blue-2);
     --offline: var(--text-5);
+
+    /* borders */
     --border-light: var(--hover);
     --border: var(--active);
     --border-hover: color-mix(in oklch, var(--accent-2), white 30%);
+
     --button-border: hsla(0 0% 100% / 0.09);
 }
